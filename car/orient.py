@@ -18,17 +18,17 @@ print(client.simGetCameraInfo("3").pose.orientation)
 print(client.simGetCameraInfo("4").pose.orientation)
 
 from pyquaternion import Quaternion
-w = client.simGetCameraInfo("0").pose.orientation.w_val
-x = client.simGetCameraInfo("0").pose.orientation.x_val
-y = client.simGetCameraInfo("0").pose.orientation.y_val
-z = client.simGetCameraInfo("0").pose.orientation.z_val
+w = client.simGetCameraInfo("4").pose.orientation.w_val
+x = client.simGetCameraInfo("4").pose.orientation.x_val
+y = client.simGetCameraInfo("4").pose.orientation.y_val
+z = client.simGetCameraInfo("4").pose.orientation.z_val
 q_f = Quaternion(w,x,y,z)
 q_1 = Quaternion(axis=[1, 0, 0], angle=3.14159265)
 q_2 = Quaternion(axis=[0, 1, 0], angle=3.14159265)
 q_3 = Quaternion(axis=[1, 1, 1], angle=3.14159265)
 q_tmp = q_f*q_3
 # q = airsim.Quaternionr(q_tmp[0],q_tmp[1],q_tmp[2],q_tmp[3])
-q = airsim.Quaternionr(-q_f[3],q_f[2],-q_f[1],q_f[0])
+q = airsim.Quaternionr(q_f[0],q_f[1],q_f[2],q_f[3])
 client.simSetCameraOrientation("1",q)
 q_tmp = q_f*q_3
 # q = airsim.Quaternionr(q_tmp[0],q_tmp[1],q_tmp[2],q_tmp[3])
