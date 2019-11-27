@@ -12,10 +12,10 @@ client.enableApiControl(True)
 car_controls = airsim.CarControls()
 
 q = airsim.Quaternionr()
-print(client.simGetCameraInfo("0"))
-print(client.simGetCameraInfo("4"))
+print(client.simGetCameraInfo("0").pose)
 print(client.simGetCameraInfo("4").pose)
-print(client.simGetCameraInfo("4").pose.Quaternionr)
+print(client.simGetCameraInfo("0").pose["orientation"])
+print(client.simGetCameraInfo("4").pose["orientation"].Quaternionr)
 
 
 #restore to original state
