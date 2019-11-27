@@ -14,8 +14,7 @@ car_controls = airsim.CarControls()
 q = airsim.Quaternionr()
 print(client.simGetCameraInfo("0").pose)
 print(client.simGetCameraInfo("4").pose)
-print(client.simGetCameraInfo("0").pose["orientation"])
-print(client.simGetCameraInfo("4").pose["orientation"].Quaternionr)
+print(client.simGetCameraInfo("0").pose.orientation)
 
 
 #restore to original state
