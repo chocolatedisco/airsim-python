@@ -17,11 +17,11 @@ filename = 'c:/temp/' + "none"
 png_image = client.simGetImage(str(0), airsim.ImageType.Scene)
 airsim.write_file(os.path.normpath(filename+".png"),png_image)
 
-w = client.simGetCameraInfo("0").pose.orientation.w_val
-x = client.simGetCameraInfo("0").pose.orientation.x_val
-y = client.simGetCameraInfo("0").pose.orientation.y_val
-z = client.simGetCameraInfo("0").pose.orientation.z_val
-q = airsim.Quaternionr(x,y,z,w)
+wf = client.simGetCameraInfo("0").pose.orientation.w_val
+xf = client.simGetCameraInfo("0").pose.orientation.x_val
+yf = client.simGetCameraInfo("0").pose.orientation.y_val
+zf = client.simGetCameraInfo("0").pose.orientation.z_val
+q = airsim.Quaternionr(xf,yf,zf,wf)
 client.simSetCameraOrientation("0",q)
 
 w = client.simGetCameraInfo("0").pose.orientation.w_val
@@ -57,9 +57,9 @@ w = client.simGetCameraInfo("0").pose.orientation.w_val
 x = client.simGetCameraInfo("0").pose.orientation.x_val
 y = client.simGetCameraInfo("0").pose.orientation.y_val
 z = client.simGetCameraInfo("0").pose.orientation.z_val
-q = airsim.Quaternionr(x,y,z,w).rotate(xr)
+q = airsim.Quaternionr(x,y,z,w).rotate(yr)
 client.simSetCameraOrientation("0",q)
-filename = 'c:/temp/' + "xrxrxr"
+filename = 'c:/temp/' + "yr"
 png_image = client.simGetImage(str(0), airsim.ImageType.Scene)
 airsim.write_file(os.path.normpath(filename+".png"),png_image)
 
@@ -67,9 +67,9 @@ w = client.simGetCameraInfo("0").pose.orientation.w_val
 x = client.simGetCameraInfo("0").pose.orientation.x_val
 y = client.simGetCameraInfo("0").pose.orientation.y_val
 z = client.simGetCameraInfo("0").pose.orientation.z_val
-q = airsim.Quaternionr(x,y,z,w).rotate(xr)
+q = airsim.Quaternionr(x,y,z,w).rotate(yr)
 client.simSetCameraOrientation("0",q)
-filename = 'c:/temp/' + "xrxrxrxr"
+filename = 'c:/temp/' + "yryr"
 png_image = client.simGetImage(str(0), airsim.ImageType.Scene)
 airsim.write_file(os.path.normpath(filename+".png"),png_image)
 
