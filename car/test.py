@@ -11,12 +11,7 @@ client.confirmConnection()
 client.enableApiControl(True)
 car_controls = airsim.CarControls()
 
-print(client.simGetCameraInfo("0"))
-print(client.simGetCameraInfo("0").pose.orientation)
-print(client.simGetCameraInfo("1").pose.orientation)
-print(client.simGetCameraInfo("2").pose.orientation)
-print(client.simGetCameraInfo("3").pose.orientation)
-print(client.simGetCameraInfo("4").pose.orientation)
+print(client.getCarState())
 
 #restore to original state
 client.reset()
