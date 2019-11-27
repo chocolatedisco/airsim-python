@@ -27,10 +27,10 @@ q_1 = Quaternion(axis=[1, 0, 0], angle=3.14159265)
 q_2 = Quaternion(axis=[0, 1, 0], angle=3.14159265)
 q_tmp = q_f*q_1
 q = airsim.Quaternionr(q_tmp[0],q_tmp[1],q_tmp[2],q_tmp[3])
-clinet.simSetCameraOrientation("1",q)
+client.simSetCameraOrientation("1",q)
 q_tmp = q_f*q_2
 q = airsim.Quaternionr(q_tmp[0],q_tmp[1],q_tmp[2],q_tmp[3])
-clinet.simSetCameraOrientation("2",q)
+client.simSetCameraOrientation("2",q)
 
 #restore to original state
 client.reset()
