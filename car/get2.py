@@ -53,11 +53,7 @@ filename = 'c:/temp/' + "xrxr"
 png_image = client.simGetImage(str(0), airsim.ImageType.Scene)
 airsim.write_file(os.path.normpath(filename+".png"),png_image)
 
-w = client.simGetCameraInfo("0").pose.orientation.w_val
-x = client.simGetCameraInfo("0").pose.orientation.x_val
-y = client.simGetCameraInfo("0").pose.orientation.y_val
-z = client.simGetCameraInfo("0").pose.orientation.z_val
-q = airsim.Quaternionr(x,y,z,w).rotate(yr)
+q = airsim.Quaternionr(xf,yf,zf,wf).rotate(yr)
 client.simSetCameraOrientation("0",q)
 filename = 'c:/temp/' + "yr"
 png_image = client.simGetImage(str(0), airsim.ImageType.Scene)
