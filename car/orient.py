@@ -22,7 +22,10 @@ x = client.simGetCameraInfo("0").pose.orientation.x_val
 y = client.simGetCameraInfo("0").pose.orientation.y_val
 z = client.simGetCameraInfo("0").pose.orientation.z_val
 
-q = airsim.Quaternionr(x,y,z,w).conjugate()
+q = airsim.Quaternionr(x,y,z,w).conjugate().inverse()
+client.simSetCameraOrientation("0",q)
+
+q = airsim.Quaternionr(x,y,z,w).conjugate().inverse()
 client.simSetCameraOrientation("1",q)
 
 q = airsim.Quaternionr(x,y,z,w).inverse()
