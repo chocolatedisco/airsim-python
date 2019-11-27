@@ -13,7 +13,7 @@ client.enableApiControl(True)
 if not os.path.exists('c:/temp/'):
     os.makedirs('c:/temp/')
 
-filename = 'c:/temp/py' + str(0)
+filename = 'c:/temp/py' + "none"
 png_image = client.simGetImage(str(0), airsim.ImageType.Scene)
 airsim.write_file(os.path.normpath(filename+".png"),png_image)
 
@@ -23,7 +23,7 @@ y = client.simGetCameraInfo("0").pose.orientation.y_val
 z = client.simGetCameraInfo("0").pose.orientation.z_val
 q = airsim.Quaternionr(x,y,z,w).conjugate()
 client.simSetCameraOrientation("0",q)
-filename = 'c:/temp/py' + str(1)
+filename = 'c:/temp/py' + "conjugate"
 png_image = client.simGetImage(str(0), airsim.ImageType.Scene)
 airsim.write_file(os.path.normpath(filename+".png"),png_image)
 
@@ -33,7 +33,7 @@ y = client.simGetCameraInfo("0").pose.orientation.y_val
 z = client.simGetCameraInfo("0").pose.orientation.z_val
 q = airsim.Quaternionr(x,y,z,w).conjugate().inverse()
 client.simSetCameraOrientation("0",q)
-filename = 'c:/temp/py' + str(2)
+filename = 'c:/temp/py' + "conjugate_inverse"
 png_image = client.simGetImage(str(0), airsim.ImageType.Scene)
 airsim.write_file(os.path.normpath(filename+".png"),png_image)
 
@@ -43,7 +43,7 @@ y = client.simGetCameraInfo("0").pose.orientation.y_val
 z = client.simGetCameraInfo("0").pose.orientation.z_val
 q = airsim.Quaternionr(x,y,z,w).inverse()
 client.simSetCameraOrientation("0",q)
-filename = 'c:/temp/py' + str(3)
+filename = 'c:/temp/py' + "inverse"
 png_image = client.simGetImage(str(0), airsim.ImageType.Scene)
 airsim.write_file(os.path.normpath(filename+".png"),png_image)
 
