@@ -85,7 +85,7 @@ w = client.simGetCameraInfo("4").pose.orientation.w_val
 x = client.simGetCameraInfo("4").pose.orientation.x_val
 y = client.simGetCameraInfo("4").pose.orientation.y_val
 z = client.simGetCameraInfo("4").pose.orientation.z_val
-q = airsim.Quaternionr(x,y,z,w).rotate(zr)
+q = airsim.Quaternionr(x,y,z,w)
 client.simSetCameraOrientation("0",q)
 filename = 'c:/temp/' + "04"
 png_image = client.simGetImage(str(0), airsim.ImageType.Scene)
