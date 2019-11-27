@@ -28,15 +28,15 @@ filename = 'c:/temp/' + "conjugate"
 png_image = client.simGetImage(str(0), airsim.ImageType.Scene)
 airsim.write_file(os.path.normpath(filename+".png"),png_image)
 
-q = airsim.Quaternionr(x,y,z,w).conjugate().inverse()
-client.simSetCameraOrientation("0",q)
-filename = 'c:/temp/' + "conjugate_inverse"
-png_image = client.simGetImage(str(0), airsim.ImageType.Scene)
-airsim.write_file(os.path.normpath(filename+".png"),png_image)
-
 q = airsim.Quaternionr(x,y,z,w).inverse()
 client.simSetCameraOrientation("0",q)
 filename = 'c:/temp/' + "inverse"
+png_image = client.simGetImage(str(0), airsim.ImageType.Scene)
+airsim.write_file(os.path.normpath(filename+".png"),png_image)
+
+q = airsim.Quaternionr(x,y,z,w).conjugate().inverse()
+client.simSetCameraOrientation("0",q)
+filename = 'c:/temp/' + "conjugate_inverse"
 png_image = client.simGetImage(str(0), airsim.ImageType.Scene)
 airsim.write_file(os.path.normpath(filename+".png"),png_image)
 
@@ -55,6 +55,18 @@ airsim.write_file(os.path.normpath(filename+".png"),png_image)
 q = airsim.Quaternionr(x,y,z,w).inverse().inverse()
 client.simSetCameraOrientation("0",q)
 filename = 'c:/temp/' + "inverse_inverse"
+png_image = client.simGetImage(str(0), airsim.ImageType.Scene)
+airsim.write_file(os.path.normpath(filename+".png"),png_image)
+
+q = airsim.Quaternionr(x,y,z,w).conjugate().conjugate().conjugate()
+client.simSetCameraOrientation("0",q)
+filename = 'c:/temp/' + "conjugate_conjugate_conjugate"
+png_image = client.simGetImage(str(0), airsim.ImageType.Scene)
+airsim.write_file(os.path.normpath(filename+".png"),png_image)
+
+q = airsim.Quaternionr(x,y,z,w).inverse().inverse().inverse()
+client.simSetCameraOrientation("0",q)
+filename = 'c:/temp/' + "inverse_inverse_inverse"
 png_image = client.simGetImage(str(0), airsim.ImageType.Scene)
 airsim.write_file(os.path.normpath(filename+".png"),png_image)
 
