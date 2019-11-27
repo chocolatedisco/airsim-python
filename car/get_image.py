@@ -21,8 +21,5 @@ for i in range(0,5):
 
 #restore to original state
 client.reset()
-
 client.enableApiControl(False)
 
-
-            
