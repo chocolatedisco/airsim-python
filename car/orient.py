@@ -31,7 +31,7 @@ z = client.simGetCameraInfo("0").pose.orientation.z_val
 q = airsim.Quaternionr(x,y,z,w).inverse()
 client.simSetCameraOrientation("2",q)
 
-q = airsim.Quaternionr(x,y,z,w).conjugate
+q = airsim.Quaternionr(x,y,z,w).conjugate()
 client.simSetCameraOrientation("3",q)
 
 #restore to original state
