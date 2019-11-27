@@ -13,7 +13,7 @@ client.enableApiControl(True)
 if not os.path.exists('c:/temp/'):
     os.makedirs('c:/temp/')
 
-filename = 'c:/temp/py' + "none"
+filename = 'c:/temp/' + "none"
 png_image = client.simGetImage(str(0), airsim.ImageType.Scene)
 airsim.write_file(os.path.normpath(filename+".png"),png_image)
 
@@ -21,29 +21,28 @@ w = client.simGetCameraInfo("0").pose.orientation.w_val
 x = client.simGetCameraInfo("0").pose.orientation.x_val
 y = client.simGetCameraInfo("0").pose.orientation.y_val
 z = client.simGetCameraInfo("0").pose.orientation.z_val
+
 q = airsim.Quaternionr(x,y,z,w).conjugate()
 client.simSetCameraOrientation("0",q)
-filename = 'c:/temp/py' + "conjugate"
+filename = 'c:/temp/' + "conjugate"
 png_image = client.simGetImage(str(0), airsim.ImageType.Scene)
 airsim.write_file(os.path.normpath(filename+".png"),png_image)
 
-w = client.simGetCameraInfo("0").pose.orientation.w_val
-x = client.simGetCameraInfo("0").pose.orientation.x_val
-y = client.simGetCameraInfo("0").pose.orientation.y_val
-z = client.simGetCameraInfo("0").pose.orientation.z_val
 q = airsim.Quaternionr(x,y,z,w).conjugate().inverse()
 client.simSetCameraOrientation("0",q)
-filename = 'c:/temp/py' + "conjugate_inverse"
+filename = 'c:/temp/' + "conjugate_inverse"
 png_image = client.simGetImage(str(0), airsim.ImageType.Scene)
 airsim.write_file(os.path.normpath(filename+".png"),png_image)
 
-w = client.simGetCameraInfo("0").pose.orientation.w_val
-x = client.simGetCameraInfo("0").pose.orientation.x_val
-y = client.simGetCameraInfo("0").pose.orientation.y_val
-z = client.simGetCameraInfo("0").pose.orientation.z_val
 q = airsim.Quaternionr(x,y,z,w).inverse()
 client.simSetCameraOrientation("0",q)
-filename = 'c:/temp/py' + "inverse"
+filename = 'c:/temp/' + "inverse"
+png_image = client.simGetImage(str(0), airsim.ImageType.Scene)
+airsim.write_file(os.path.normpath(filename+".png"),png_image)
+
+q = airsim.Quaternionr(x,y,z,w).inverse().conjugate()
+client.simSetCameraOrientation("0",q)
+filename = 'c:/temp/' + "inverse_conjugate"
 png_image = client.simGetImage(str(0), airsim.ImageType.Scene)
 airsim.write_file(os.path.normpath(filename+".png"),png_image)
 
