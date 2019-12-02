@@ -13,80 +13,272 @@
         "RemoteControlID": -1
       },
       "Cameras": {
-        "front": {
-          "X": 0,
+        "f_f": {
+          "X": 2.2,
           "Y": 0,
-          "Z": -5,
+          "Z": -1,
           "Pitch": 0,
           "Roll": 0,
-          "Yaw": 0
+          "Yaw": 0,
+          "CaptureSettings": [
+            {
+              "ImageType": 0,
+              "Width": 256,
+              "Height": 256,
+              "FOV_Degrees": 90
+            }
+          ]
         },
-        "left": {
-          "X": 0,
+        "f_l": {
+          "X": 2.2,
           "Y": 0,
-          "Z": -5,
+          "Z": -1,
           "Pitch": 0,
           "Roll": 0,
-          "Yaw": -90
+          "Yaw": -90,
+          "CaptureSettings": [
+            {
+              "ImageType": 0,
+              "Width": 256,
+              "Height": 256,
+              "FOV_Degrees": 90
+            }
+          ]
         },
-        "right": {
-          "X": 0,
+        "f_r": {
+          "X": 2.2,
           "Y": 0,
-          "Z": -5,
+          "Z": -1,
           "Pitch": 0,
           "Roll": 0,
-          "Yaw": 90
+          "Yaw": 90,
+          "CaptureSettings": [
+            {
+              "ImageType": 0,
+              "Width": 256,
+              "Height": 256,
+              "FOV_Degrees": 90
+            }
+          ]
         },
-        "up": {
-          "X": 0,
+        "f_u": {
+          "X": 2.2,
           "Y": 0,
-          "Z": -5,
+          "Z": -1,
           "Pitch": 90,
           "Roll": 0,
-          "Yaw": 0
+          "Yaw": 0,
+          "CaptureSettings": [
+            {
+              "ImageType": 0,
+              "Width": 256,
+              "Height": 256,
+              "FOV_Degrees": 90
+            }
+          ]
         },
-        "down": {
-          "X": 0,
+        "f_d": {
+          "X": 2.2,
           "Y": 0,
-          "Z": -20,
+          "Z": -1,
           "Pitch": -90,
           "Roll": 0,
-          "Yaw": 0
+          "Yaw": 0,
+          "CaptureSettings": [
+            {
+              "ImageType": 0,
+              "Width": 256,
+              "Height": 256,
+              "FOV_Degrees": 90
+            }
+          ]
         },
-        "back": {
+        "r_l": {
           "X": 0,
-          "Y": 0,
-          "Z": -5,
+          "Y": 1,
+          "Z": -1,
           "Pitch": 0,
           "Roll": 0,
-          "Yaw": 180
+          "Yaw": 0,
+          "CaptureSettings": [
+            {
+              "ImageType": 0,
+              "Width": 256,
+              "Height": 256,
+              "FOV_Degrees": 90
+            }
+          ]
+        },
+        "r_f": {
+          "X": 0,
+          "Y": 1,
+          "Z": -1,
+          "Pitch": 0,
+          "Roll": 0,
+          "Yaw": 90,
+          "CaptureSettings": [
+            {
+              "ImageType": 0,
+              "Width": 256,
+              "Height": 256,
+              "FOV_Degrees": 90
+            }
+          ]
+        },
+        "r_u": {
+          "X": 0,
+          "Y": 1,
+          "Z": -1,
+          "Pitch": 90,
+          "Roll": 0,
+          "Yaw": 0,
+          "CaptureSettings": [
+            {
+              "ImageType": 0,
+              "Width": 256,
+              "Height": 256,
+              "FOV_Degrees": 90
+            }
+          ]
+        },
+        "r_d": {
+          "X": 0,
+          "Y": 1,
+          "Z": -1,
+          "Pitch": -90,
+          "Roll": 0,
+          "Yaw": 0,
+          "CaptureSettings": [
+            {
+              "ImageType": 0,
+              "Width": 256,
+              "Height": 256,
+              "FOV_Degrees": 90
+            }
+          ]
+        },
+        "r_r": {
+          "X": 0,
+          "Y": 1,
+          "Z": -1,
+          "Pitch": 0,
+          "Roll": 0,
+          "Yaw": 180,
+          "CaptureSettings": [
+            {
+              "ImageType": 0,
+              "Width": 256,
+              "Height": 256,
+              "FOV_Degrees": 90
+            }
+          ]
+        },
+        "l_r": {
+          "X": 0,
+          "Y": -1,
+          "Z": -1,
+          "Pitch": 0,
+          "Roll": 0,
+          "Yaw": 0,
+          "CaptureSettings": [
+            {
+              "ImageType": 0,
+              "Width": 256,
+              "Height": 256,
+              "FOV_Degrees": 90
+            }
+          ]
+        },
+        "l_f": {
+          "X": 0,
+          "Y": -1,
+          "Z": -1,
+          "Pitch": 0,
+          "Roll": 0,
+          "Yaw": -90,
+          "CaptureSettings": [
+            {
+              "ImageType": 0,
+              "Width": 256,
+              "Height": 256,
+              "FOV_Degrees": 90
+            }
+          ]
+        },
+        "l_u": {
+          "X": 0,
+          "Y": -1,
+          "Z": -1,
+          "Pitch": 90,
+          "Roll": 0,
+          "Yaw": 0,
+          "CaptureSettings": [
+            {
+              "ImageType": 0,
+              "Width": 256,
+              "Height": 256,
+              "FOV_Degrees": 90
+            }
+          ]
+        },
+        "l_d": {
+          "X": 0,
+          "Y": -1,
+          "Z": -1,
+          "Pitch": -90,
+          "Roll": 0,
+          "Yaw": 0,
+          "CaptureSettings": [
+            {
+              "ImageType": 0,
+              "Width": 256,
+              "Height": 256,
+              "FOV_Degrees": 90
+            }
+          ]
+        },
+        "l_l": {
+          "X": 0,
+          "Y": -1,
+          "Z": -1,
+          "Pitch": 0,
+          "Roll": 0,
+          "Yaw": 180,
+          "CaptureSettings": [
+            {
+              "ImageType": 0,
+              "Width": 256,
+              "Height": 256,
+              "FOV_Degrees": 90
+            }
+          ]
         }
       },
-      "X": 102.96359,
-      "Y": -894.599062442779541,
-      "Z": 1,
+      "X": 0,
+      "Y": 0,
+      "Z": 0,
       "Pitch": 0,
       "Roll": 0,
-      "Yaw": 90
+      "Yaw": 0
     }
   },
   "SubWindows": [
     {
       "WindowID": 0,
       "ImageType": 0,
-      "CameraName": "left",
+      "CameraName": "l_l",
       "Visible": true
     },
     {
       "WindowID": 1,
       "ImageType": 0,
-      "CameraName": "right",
+      "CameraName": "l_r",
       "Visible": true
     },
     {
       "WindowID": 2,
       "ImageType": 0,
-      "CameraName": "back",
+      "CameraName": "l_d",
       "Visible": true
     }
   ],
@@ -95,37 +287,31 @@
     "RecordOnMove": false,
     "Cameras": [
       {
-        "CameraName": "front",
+        "CameraName": "l_u",
         "ImageType": 0,
         "PixelsAsFloat": false,
         "Compress": true
       },
       {
-        "CameraName": "left",
+        "CameraName": "l_l",
         "ImageType": 0,
         "PixelsAsFloat": false,
         "Compress": true
       },
       {
-        "CameraName": "right",
+        "CameraName": "l_r",
         "ImageType": 0,
         "PixelsAsFloat": false,
         "Compress": true
       },
       {
-        "CameraName": "back",
+        "CameraName": "l_d",
         "ImageType": 0,
         "PixelsAsFloat": false,
         "Compress": true
       },
       {
-        "CameraName": "up",
-        "ImageType": 0,
-        "PixelsAsFloat": false,
-        "Compress": true
-      },
-      {
-        "CameraName": "down",
+        "CameraName": "l_f",
         "ImageType": 0,
         "PixelsAsFloat": false,
         "Compress": true
