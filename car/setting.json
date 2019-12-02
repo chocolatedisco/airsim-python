@@ -1,0 +1,68 @@
+{
+  "SimMode": "Multirotor",
+  "SettingsVersion": 1.2,
+  "Vehicles": {
+    "FishEyeDrone": {
+      "VehicleType": "simpleFlight",
+      "DefaultVehicleState": "",
+      "AutoCreate": true,
+      "PawnPath": "",
+      "EnableCollisionPassthrogh": false,
+      "EnableCollisions": true,
+      "RC": {
+        "RemoteControlID": -1
+      },
+      "Cameras": {
+        "MyCamera0": {
+          "X": 2,
+          "Y": 0,
+          "Z": -1,
+          "Pitch": 0,
+          "Roll": 0,
+          "Yaw": 0
+        },
+        "MyCamera1": {
+          "X": 0,
+          "Y": 2,
+          "Z": -1,
+          "Pitch": 0,
+          "Roll": 0,
+          "Yaw": 90
+        }
+      },
+      "X": 102.96359,
+      "Y": -894.599062442779541,
+      "Z": 1,
+      "Pitch": 0,
+      "Roll": 0,
+      "Yaw": 0
+    }
+  },
+  "SubWindows": [
+    {
+      "WindowID": 0,
+      "ImageType": 0,
+      "CameraName": "MyCamera0",
+      "Visible": true
+    },
+    {
+      "WindowID": 1,
+      "ImageType": 0,
+      "CameraName": "MyCamera1",
+      "Visible": true
+    }
+  ],
+  "Recording": {
+    "RecordInterval": 0.5,
+    "RecordOnMove": false,
+    "Cameras": [
+      {
+        "CameraName": "MyCamera0",
+        "ImageType": 0,
+        "PixelsAsFloat": false,
+        "Compress": true
+      }
+    ]
+  },
+  "SeeDocsAt": "https://github.com/Microsoft/AirSim/blob/master/docs/settings.md"
+}

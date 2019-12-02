@@ -1,0 +1,136 @@
+{
+  "SimMode": "Car",
+  "SettingsVersion": 1.2,
+  "Vehicles": {
+    "PhysXCar": {
+      "VehicleType": "PhysXCar",
+      "DefaultVehicleState": "",
+      "AutoCreate": true,
+      "PawnPath": "",
+      "EnableCollisionPassthrogh": false,
+      "EnableCollisions": true,
+      "RC": {
+        "RemoteControlID": -1
+      },
+      "Cameras": {
+        "front": {
+          "X": 0,
+          "Y": 0,
+          "Z": -5,
+          "Pitch": 0,
+          "Roll": 0,
+          "Yaw": 0
+        },
+        "left": {
+          "X": 0,
+          "Y": 0,
+          "Z": -5,
+          "Pitch": 0,
+          "Roll": 0,
+          "Yaw": -90
+        },
+        "right": {
+          "X": 0,
+          "Y": 0,
+          "Z": -5,
+          "Pitch": 0,
+          "Roll": 0,
+          "Yaw": 90
+        },
+        "up": {
+          "X": 0,
+          "Y": 0,
+          "Z": -5,
+          "Pitch": 90,
+          "Roll": 0,
+          "Yaw": 0
+        },
+        "down": {
+          "X": 0,
+          "Y": 0,
+          "Z": -20,
+          "Pitch": -90,
+          "Roll": 0,
+          "Yaw": 0
+        },
+        "back": {
+          "X": 0,
+          "Y": 0,
+          "Z": -5,
+          "Pitch": 0,
+          "Roll": 0,
+          "Yaw": 180
+        }
+      },
+      "X": 102.96359,
+      "Y": -894.599062442779541,
+      "Z": 1,
+      "Pitch": 0,
+      "Roll": 0,
+      "Yaw": 90
+    }
+  },
+  "SubWindows": [
+    {
+      "WindowID": 0,
+      "ImageType": 0,
+      "CameraName": "left",
+      "Visible": true
+    },
+    {
+      "WindowID": 1,
+      "ImageType": 0,
+      "CameraName": "right",
+      "Visible": true
+    },
+    {
+      "WindowID": 2,
+      "ImageType": 0,
+      "CameraName": "back",
+      "Visible": true
+    }
+  ],
+  "Recording": {
+    "RecordInterval": 0.5,
+    "RecordOnMove": false,
+    "Cameras": [
+      {
+        "CameraName": "front",
+        "ImageType": 0,
+        "PixelsAsFloat": false,
+        "Compress": true
+      },
+      {
+        "CameraName": "left",
+        "ImageType": 0,
+        "PixelsAsFloat": false,
+        "Compress": true
+      },
+      {
+        "CameraName": "right",
+        "ImageType": 0,
+        "PixelsAsFloat": false,
+        "Compress": true
+      },
+      {
+        "CameraName": "back",
+        "ImageType": 0,
+        "PixelsAsFloat": false,
+        "Compress": true
+      },
+      {
+        "CameraName": "up",
+        "ImageType": 0,
+        "PixelsAsFloat": false,
+        "Compress": true
+      },
+      {
+        "CameraName": "down",
+        "ImageType": 0,
+        "PixelsAsFloat": false,
+        "Compress": true
+      }
+    ]
+  },
+  "SeeDocsAt": "https://github.com/Microsoft/AirSim/blob/master/docs/settings.md"
+}

@@ -12,6 +12,7 @@ client.enableApiControl(True)
 car_controls = airsim.CarControls()
 
 print(client.getCarState())
+print(client.getPosition())
 
 #restore to original state
 client.reset()
