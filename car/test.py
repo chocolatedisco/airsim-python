@@ -16,6 +16,5 @@ print(client.getGpsLocation())
 
 
 #restore to original state
-client.reset()
 
 client.enableApiControl(False)
