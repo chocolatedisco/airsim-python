@@ -252,6 +252,86 @@
               "FOV_Degrees": 90
             }
           ]
+        },
+        "b_f": {
+          "X": -2,
+          "Y": 0,
+          "Z": -1,
+          "Pitch": 0,
+          "Roll": 0,
+          "Yaw": 180,
+          "CaptureSettings": [
+            {
+              "ImageType": 0,
+              "Width": 256,
+              "Height": 256,
+              "FOV_Degrees": 90
+            }
+          ]
+        },
+        "b_r": {
+          "X": -2,
+          "Y": 0,
+          "Z": -1,
+          "Pitch": 0,
+          "Roll": 0,
+          "Yaw": -90,
+          "CaptureSettings": [
+            {
+              "ImageType": 0,
+              "Width": 256,
+              "Height": 256,
+              "FOV_Degrees": 90
+            }
+          ]
+        },
+        "b_l": {
+          "X": -2,
+          "Y": 0,
+          "Z": -1,
+          "Pitch": 0,
+          "Roll": 0,
+          "Yaw": 90,
+          "CaptureSettings": [
+            {
+              "ImageType": 0,
+              "Width": 256,
+              "Height": 256,
+              "FOV_Degrees": 90
+            }
+          ]
+        },
+        "b_u": {
+          "X": -2,
+          "Y": 0,
+          "Z": -1,
+          "Pitch": 90,
+          "Roll": 0,
+          "Yaw": 0,
+          "CaptureSettings": [
+            {
+              "ImageType": 0,
+              "Width": 256,
+              "Height": 256,
+              "FOV_Degrees": 90
+            }
+          ]
+        },
+        "b_d": {
+          "X": -2,
+          "Y": 0,
+          "Z": -1,
+          "Pitch": -90,
+          "Roll": 0,
+          "Yaw": 0,
+          "CaptureSettings": [
+            {
+              "ImageType": 0,
+              "Width": 256,
+              "Height": 256,
+              "FOV_Degrees": 90
+            }
+          ]
         }
       },
       "X": 0,
@@ -266,19 +346,19 @@
     {
       "WindowID": 0,
       "ImageType": 0,
-      "CameraName": "l_l",
+      "CameraName": "b_l",
       "Visible": true
     },
     {
       "WindowID": 1,
       "ImageType": 0,
-      "CameraName": "l_r",
+      "CameraName": "b_u",
       "Visible": true
     },
     {
       "WindowID": 2,
       "ImageType": 0,
-      "CameraName": "l_d",
+      "CameraName": "b_d",
       "Visible": true
     }
   ],
@@ -287,31 +367,31 @@
     "RecordOnMove": false,
     "Cameras": [
       {
-        "CameraName": "l_u",
+        "CameraName": "b_u",
         "ImageType": 0,
         "PixelsAsFloat": false,
         "Compress": true
       },
       {
-        "CameraName": "l_l",
+        "CameraName": "b_l",
         "ImageType": 0,
         "PixelsAsFloat": false,
         "Compress": true
       },
       {
-        "CameraName": "l_r",
+        "CameraName": "b_r",
         "ImageType": 0,
         "PixelsAsFloat": false,
         "Compress": true
       },
       {
-        "CameraName": "l_d",
+        "CameraName": "b_d",
         "ImageType": 0,
         "PixelsAsFloat": false,
         "Compress": true
       },
       {
-        "CameraName": "l_f",
+        "CameraName": "b_f",
         "ImageType": 0,
         "PixelsAsFloat": false,
         "Compress": true
