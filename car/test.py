@@ -13,7 +13,6 @@ car_controls = airsim.CarControls()
 
 print(client.getGpsData())
 print(client.getGpsLocation())
-print(client.getLandedState())
 
 
 #restore to original state
