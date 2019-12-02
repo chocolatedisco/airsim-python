@@ -12,8 +12,6 @@ client.enableApiControl(True)
 car_controls = airsim.CarControls()
 
 print(client.getCarState())
-print(client.getGpsLocation())
-
 
 #restore to original state
 
