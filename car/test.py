@@ -11,7 +11,7 @@ client.confirmConnection()
 client.enableApiControl(True)
 car_controls = airsim.CarControls()
 
-print(client.getGpsData())
+print(client.getCarState())
 print(client.getGpsLocation())
 
 
